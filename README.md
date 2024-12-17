@@ -56,7 +56,7 @@ Caso necessário, adicione o caminho da pasta de instalação do AWS CLI ao Path
 
 Acesse o laboratório da AWS e copie as credenciais:
 
-![alt text](image.png)
+![alt text](./imgs/credentials.png)
 
 Através do comando abaixo, insira as credenciais:
 ```cmd
@@ -64,6 +64,10 @@ C:\>aws configure
 AWS Access Key ID []: credencial
 AWS Secret Access Key []: credencial
 ```
+
+**Opcional**
+
+Pode ser necessário configurar o ``aws_session_token``. Para isso, no windows acesse o arquivo `C:\Users\user\.aws\credentials`, e com um bloco de notas,adicione a nova credencial.
 
 <hr>
 
@@ -86,6 +90,7 @@ terraform validate
 ```
 
 A estrutura deve ser a seguinte:
+
 ![alt text](./imgs/structure.png)
 
 Para aplicar as alterações à AWS, execute:
@@ -93,10 +98,6 @@ Para aplicar as alterações à AWS, execute:
 ```cmd
 terraform apply
 ```
-
-**Opcional**
-
-Pode ser necessário configurar o ``aws_session_token``. Para isso, no windows acesse o arquivo `C:\Users\user\.aws\credentials`, e com um bloco de notas adicione a nova credencial.
 
 ### 5. Finalização
 
